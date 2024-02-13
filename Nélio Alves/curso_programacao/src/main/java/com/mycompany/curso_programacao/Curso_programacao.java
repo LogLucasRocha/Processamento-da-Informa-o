@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.curso_programacao;
+import java.util.Scanner;
 
 /**
  *
@@ -11,10 +12,18 @@ package com.mycompany.curso_programacao;
 public class Curso_programacao {
 
     public static void main(String[] args) {
-        String nome= "Maria";
-        int idade = 31;
-        double renda = 4000.0;
+        Scanner sc = new Scanner(System.in);
         
-        System.out.printf("%s tem %d anos de idade e recebe mensalmente R$%.2f.", nome, idade, renda);
+        String s1, s2, s3;
+        
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+        
+        System.out.println("Dados digitados: ");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        
     }
 }
